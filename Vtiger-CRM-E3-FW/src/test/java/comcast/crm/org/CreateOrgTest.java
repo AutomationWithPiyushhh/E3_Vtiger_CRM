@@ -14,14 +14,14 @@ public class CreateOrgTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
-		driver.get("http://localhost:8888/");
+		driver.get("http://49.249.28.218:8888/");
 
 //		Logging into Vtiger crm application
 		WebElement un = driver.findElement(By.name("user_name"));
 		un.sendKeys("admin");
 
 		WebElement pwd = driver.findElement(By.name("user_password"));
-		pwd.sendKeys("password");
+		pwd.sendKeys("admin");
 
 		driver.findElement(By.id("submitButton")).click();
 
@@ -33,7 +33,7 @@ public class CreateOrgTest {
 
 //		Enter the valid data into the form
 		WebElement org = driver.findElement(By.name("accountname"));
-		String orgName = "qspiders_0987dhgfu";
+		String orgName = "qspiders_" + (int)(Math.random()*9999);
 		org.sendKeys(orgName);
 
 //		Save 
@@ -54,5 +54,6 @@ public class CreateOrgTest {
 
 		driver.findElement(By.linkText("Sign Out")).click();
 
+		driver.quit();
 	}
 }
