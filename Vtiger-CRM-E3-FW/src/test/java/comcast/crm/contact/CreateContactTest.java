@@ -66,7 +66,7 @@ public class CreateContactTest {
 //		Enter the valid data into the form
 		WebElement ln = driver.findElement(By.name("lastname"));
 		String lastName = "kumar";
-		ln.sendKeys(lastName);
+		ln.sendKeys(lastName); 
 
 //		Save 
 		driver.findElement(By.cssSelector("input[title='Save [Alt+S]']")).click();
