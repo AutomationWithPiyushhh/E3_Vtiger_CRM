@@ -1,13 +1,9 @@
 package comcast.crm.org;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,26 +12,21 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import generic_utility.FileUtility;
+import generic_utility.WebDriverUtility;
+
 public class CreateOrgTest {
-	public static void main(String[] args) throws EncryptedDocumentException, IOException {
+	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException {
 
-//		Get the data from properties file
-		FileInputStream fis1 = new FileInputStream(
-				"C:\\Users\\User\\git\\E3_Vtiger_CRM\\Vtiger-CRM-E3-FW\\src\\test\\resources\\commonData.properties");
-		Properties pObj = new Properties();
-		pObj.load(fis1);
-		String BROWSER = pObj.getProperty("bro");
-		String URL = pObj.getProperty("url");
-		String USERNAME = pObj.getProperty("un");
-		String PASSWORD = pObj.getProperty("pwd");
+		FileUtility fUtil = new FileUtility();
+		
+		String BROWSER = fUtil.getDataFromPropertiesFile("bro");
+		String URL = fUtil.getDataFromPropertiesFile("url");
+		String USERNAME = fUtil.getDataFromPropertiesFile("un");
+		String PASSWORD = fUtil.getDataFromPropertiesFile("pwd");
 
-//		Get the data from excel file
-		FileInputStream fis2 = new FileInputStream(
-				"C:\\Users\\User\\git\\E3_Vtiger_CRM\\Vtiger-CRM-E3-FW\\src\\test\\resources\\testScriptData.xlsx");
-
-		Workbook wb = WorkbookFactory.create(fis2);
-		String orgName = wb.getSheet("org").getRow(1).getCell(0).getStringCellValue() + (int) (Math.random() * 9999);
-
+		String orgName = fUtil.getDataFromExcelFile("org", 1, 0);
+		
 		WebDriver driver = null;
 
 		if (BROWSER.equals("chrome")) {
@@ -48,7 +39,10 @@ public class CreateOrgTest {
 			driver = new ChromeDriver();
 		}
 
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
+		WebDriverUtility wdUtil = new WebDriverUtility(driver);
+		wdUtil.winMax();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 		driver.get(URL);
@@ -62,33 +56,36 @@ public class CreateOrgTest {
 
 		driver.findElement(By.id("submitButton")).click();
 
-//		Click on org link
-		driver.findElement(By.linkText("Organizations")).click();
+////		Click on org link
+//		driver.findElement(By.linkText("Organizations")).click();
+//
+////		Click on plus icon
+//		driver.findElement(By.cssSelector("img[alt='Create Organization...']")).click();
+//
+////		Enter the valid data into the form
+//		WebElement org = driver.findElement(By.name("accountname"));
+////		String orgName = "qspiders_" + (int)(Math.random()*9999);
+//		org.sendKeys(orgName);
+//
+////		Save 
+//		driver.findElement(By.cssSelector("input[title='Save [Alt+S]']")).click();
+//
+////		Verification
+//		String actOrgName = driver.findElement(By.id("dtlview_Organization Name")).getText();
+//
+//		if (actOrgName.equals(orgName)) {
+//			System.out.println("Organization created successfully....");
+//		}
 
-//		Click on plus icon
-		driver.findElement(By.cssSelector("img[alt='Create Organization...']")).click();
-
-//		Enter the valid data into the form
-		WebElement org = driver.findElement(By.name("accountname"));
-//		String orgName = "qspiders_" + (int)(Math.random()*9999);
-		org.sendKeys(orgName);
-
-//		Save 
-		driver.findElement(By.cssSelector("input[title='Save [Alt+S]']")).click();
-
-//		Verification
-		String actOrgName = driver.findElement(By.id("dtlview_Organization Name")).getText();
-
-		if (actOrgName.equals(orgName)) {
-			System.out.println("Organization created successfully....");
-		}
-
+		Thread.sleep(3000);
 //		Logging out 
 		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
 
-		Actions act = new Actions(driver);
-		act.moveToElement(profile).build().perform();
+//		Actions act = new Actions(driver);
+//		act.moveToElement(profile).build().perform();
 
+		wdUtil.hover(profile);
+		
 		driver.findElement(By.linkText("Sign Out")).click();
 
 		driver.quit();
