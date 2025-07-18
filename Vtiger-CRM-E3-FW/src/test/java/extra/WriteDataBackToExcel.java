@@ -1,6 +1,7 @@
 package extra;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
 
@@ -11,7 +12,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-public class GetDataFromExcelFile {
+public class WriteDataBackToExcel {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 		FileInputStream fis = new FileInputStream(
 				"C:\\Users\\User\\git\\E3_Vtiger_CRM\\Vtiger-CRM-E3-FW\\src\\test\\resources\\testScriptData.xlsx");
@@ -22,24 +23,15 @@ public class GetDataFromExcelFile {
 
 		Row row = sh.getRow(11);
 
-		Cell cell = row.getCell(0);
+		Cell cell = row.createCell(3);
 
-		String value = cell.getStringCellValue();
+		cell.setCellValue("www.thales.com");
 
-		String orgName = wb.getSheet("org").getRow(10).getCell(0).getStringCellValue();
-////		long phone = (long)(wb.getSheet("org").getRow(5).getCell(1).getNumericCellValue());
-//		String phoneStr = wb.getSheet("org").getRow(5).getCell(1).getStringCellValue();
-
-		System.out.println(orgName);
-//		System.out.println(phone);
-//		System.out.println(phoneStr);
-
-//		int lastRowNum = sh.getLastRowNum();
-//		Multiple data fetch
-//		for (int i = 0; i <= lastRowNum ; i++) {
-//			you need to print
-//		}
-
+//		save 
+		FileOutputStream fos = new FileOutputStream(
+				"C:\\Users\\User\\git\\E3_Vtiger_CRM\\Vtiger-CRM-E3-FW\\src\\test\\resources\\testScriptData.xlsx");
+		wb.write(fos);
+		
 		wb.close();
 	}
 }
