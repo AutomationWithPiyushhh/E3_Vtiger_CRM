@@ -1,9 +1,7 @@
 package comcast.crm.contact;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,25 +9,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
+
+import generic_utility.FileUtility;
+import generic_utility.WebdriverUtility;
 
 public class CreateContactTest {
 	public static void main(String[] args) throws IOException {
 
-//		Step 1 : Get the java representation object of the physical file
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\User\\git\\E3_Vtiger_CRM\\Vtiger-CRM-E3-FW\\src\\test\\resources\\commonData.properties");
-
-//		step 2 : By using the object of Properties class, call load() and load all keys
-		Properties pObj = new Properties();
-		pObj.load(fis);
-
-//		Step 3 : By using getProperty(), fetch the value
-		String BROWSER = pObj.getProperty("bro");
-		String URL = pObj.getProperty("url");
-		String USERNAME = pObj.getProperty("un");
-		String PASSWORD = pObj.getProperty("pwd");
-
+		FileUtility fUtil = new FileUtility();
+		String BROWSER = fUtil.getDataFromPropertiesFile("bro");
+		String URL = fUtil.getDataFromPropertiesFile("url");
+		String USERNAME = fUtil.getDataFromPropertiesFile("un");
+		String PASSWORD = fUtil.getDataFromPropertiesFile("pwd");
+		
 		WebDriver driver = null;
 		
 		if (BROWSER.equals("chrome")) {
@@ -43,7 +35,11 @@ public class CreateContactTest {
 		}
 		
 		
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
+		
+		WebdriverUtility wdUtil = new WebdriverUtility(driver);
+		wdUtil.maxWin();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 		driver.get(URL);
@@ -81,9 +77,11 @@ public class CreateContactTest {
 //		Logging out 
 		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
 
-		Actions act = new Actions(driver);
-		act.moveToElement(profile).build().perform();
+//		Actions act = new Actions(driver);
+//		act.moveToElement(profile).build().perform();
 
+		wdUtil.hover(profile);
+		
 		driver.findElement(By.linkText("Sign Out")).click();
 
 		driver.quit();

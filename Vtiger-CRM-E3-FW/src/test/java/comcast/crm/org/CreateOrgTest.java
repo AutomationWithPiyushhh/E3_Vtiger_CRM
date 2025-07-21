@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import generic_utility.FileUtility;
-import generic_utility.WebDriverUtility;
+import object_repository.LoginPage;
 
 public class CreateOrgTest {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException {
@@ -39,16 +39,16 @@ public class CreateOrgTest {
 			driver = new ChromeDriver();
 		}
 
-//		driver.manage().window().maximize();
-		WebDriverUtility wdUtil = new WebDriverUtility(driver);
-		wdUtil.winMax();
-		
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 		driver.get(URL);
 
 //		Logging into Vtiger crm application
-		WebElement un = driver.findElement(By.name("user_name"));
+//		WebElement un = driver.findElement(By.name("user_name"));
+		LoginPage lp = new LoginPage(driver);
+		WebElement un = lp.getUsername();
+		driver.navigate().refresh();
 		un.sendKeys(USERNAME);
 
 		WebElement pwd = driver.findElement(By.name("user_password"));
@@ -81,10 +81,10 @@ public class CreateOrgTest {
 //		Logging out 
 		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
 
-//		Actions act = new Actions(driver);
-//		act.moveToElement(profile).build().perform();
+		Actions act = new Actions(driver);
+		act.moveToElement(profile).build().perform();
 
-		wdUtil.hover(profile);
+//		wdUtil.hover(profile);
 		
 		driver.findElement(By.linkText("Sign Out")).click();
 
