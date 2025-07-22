@@ -12,7 +12,7 @@ public class LoginPage {
 		PageFactory.initElements(driver,this);
 	}
 	
-		
+//	Declaration
 	@FindBy(name = "user_name")
 	private WebElement username;
 	
@@ -21,6 +21,8 @@ public class LoginPage {
 	
 	@FindBy(id = "submitButton")
 	private WebElement loginBtn;
+	
+	
 	
 	public WebElement getUsername() {
 		return username;
