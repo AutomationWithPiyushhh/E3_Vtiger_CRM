@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Hello world!!!]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-07-23T14:01:06 IST" name="Default suite" finished-at="2025-07-23T14:01:06 IST" duration-ms="76">
+    <groups>
+    </groups>
+    <test started-at="2025-07-23T14:01:06 IST" name="Default test" finished-at="2025-07-23T14:01:06 IST" duration-ms="76">
+      <class name="extra.Demo1">
+        <test-method signature="add()[pri:0, instance:extra.Demo1@3270d194]" started-at="2025-07-23T14:01:06 IST" name="add" finished-at="2025-07-23T14:01:06 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Hello world!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- add -->
+      </class> <!-- extra.Demo1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
