@@ -1,113 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
-    <line>
-      <![CDATA[Create Noida]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-07-24T13:26:03 IST" name="Default suite" finished-at="2025-07-24T13:26:10 IST" duration-ms="6937">
+  <suite started-at="2025-07-24T13:39:01 IST" name="Default suite" finished-at="2025-07-24T13:39:18 IST" duration-ms="16901">
     <groups>
     </groups>
-    <test started-at="2025-07-24T13:26:03 IST" name="Default test" finished-at="2025-07-24T13:26:10 IST" duration-ms="6937">
-      <class name="extra.Demo1">
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6866" status="PASS">
+    <test started-at="2025-07-24T13:39:01 IST" name="Default test" finished-at="2025-07-24T13:39:18 IST" duration-ms="16901">
+      <class name="extra.FaceBook">
+        <test-method signature="logibFbTest()[pri:0, instance:extra.FaceBook@4218d6a3]" started-at="2025-07-24T13:39:01 IST" name="logibFbTest" finished-at="2025-07-24T13:39:07 IST" duration-ms="6054" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6541" status="PASS">
+        </test-method> <!-- logibFbTest -->
+        <test-method signature="logibFbTest()[pri:0, instance:extra.FaceBook@4218d6a3]" started-at="2025-07-24T13:39:07 IST" name="logibFbTest" finished-at="2025-07-24T13:39:12 IST" duration-ms="5349" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6819" status="PASS">
+        </test-method> <!-- logibFbTest -->
+        <test-method signature="logibFbTest()[pri:0, instance:extra.FaceBook@4218d6a3]" started-at="2025-07-24T13:39:12 IST" name="logibFbTest" finished-at="2025-07-24T13:39:18 IST" duration-ms="5447" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6555" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6741" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6802" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6582" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6740" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6540" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-        <test-method signature="create()[pri:0, instance:extra.Demo1@76505305]" started-at="2025-07-24T13:26:04 IST" name="create" finished-at="2025-07-24T13:26:10 IST" duration-ms="6662" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Create Noida]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- create -->
-      </class> <!-- extra.Demo1 -->
+        </test-method> <!-- logibFbTest -->
+      </class> <!-- extra.FaceBook -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
