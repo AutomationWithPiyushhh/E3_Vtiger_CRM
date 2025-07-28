@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-24T13:39:01 IST" name="Default suite" finished-at="2025-07-24T13:39:18 IST" duration-ms="16901">
+  <suite started-at="2025-07-28T13:33:50 IST" name="Suite" finished-at="2025-07-28T13:33:59 IST" duration-ms="8696">
     <groups>
+      <group name="reg">
+        <method signature="Demo1.case2()[pri:0, instance:types_of_exe.Demo1@76505305]" name="case2" class="types_of_exe.Demo1"/>
+        <method signature="Demo2.case1()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" name="case1" class="types_of_exe.Demo2"/>
+        <method signature="Demo3.case1()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" name="case1" class="types_of_exe.Demo3"/>
+        <method signature="Demo3.case2()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" name="case2" class="types_of_exe.Demo3"/>
+        <method signature="Demo4.case1()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" name="case1" class="types_of_exe.Demo4"/>
+        <method signature="Demo4.case2()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" name="case2" class="types_of_exe.Demo4"/>
+      </group> <!-- reg -->
+      <group name="smoke">
+        <method signature="Demo1.case1()[pri:0, instance:types_of_exe.Demo1@76505305]" name="case1" class="types_of_exe.Demo1"/>
+        <method signature="Demo2.case2()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" name="case2" class="types_of_exe.Demo2"/>
+        <method signature="Demo3.case2()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" name="case2" class="types_of_exe.Demo3"/>
+        <method signature="Demo5.case1()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" name="case1" class="types_of_exe.Demo5"/>
+        <method signature="Demo5.case2()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" name="case2" class="types_of_exe.Demo5"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-07-24T13:39:01 IST" name="Default test" finished-at="2025-07-24T13:39:18 IST" duration-ms="16901">
-      <class name="extra.FaceBook">
-        <test-method signature="logibFbTest()[pri:0, instance:extra.FaceBook@4218d6a3]" started-at="2025-07-24T13:39:01 IST" name="logibFbTest" finished-at="2025-07-24T13:39:07 IST" duration-ms="6054" status="PASS">
+    <test started-at="2025-07-28T13:33:50 IST" name="t2" finished-at="2025-07-28T13:33:58 IST" duration-ms="7719">
+      <class name="types_of_exe.Demo2">
+        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:54 IST" duration-ms="4449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logibFbTest -->
-        <test-method signature="logibFbTest()[pri:0, instance:extra.FaceBook@4218d6a3]" started-at="2025-07-24T13:39:07 IST" name="logibFbTest" finished-at="2025-07-24T13:39:12 IST" duration-ms="5349" status="PASS">
+        </test-method> <!-- case1 -->
+        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" started-at="2025-07-28T13:33:54 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logibFbTest -->
-        <test-method signature="logibFbTest()[pri:0, instance:extra.FaceBook@4218d6a3]" started-at="2025-07-24T13:39:12 IST" name="logibFbTest" finished-at="2025-07-24T13:39:18 IST" duration-ms="5447" status="PASS">
+        </test-method> <!-- case2 -->
+      </class> <!-- types_of_exe.Demo2 -->
+    </test> <!-- t2 -->
+    <test started-at="2025-07-28T13:33:50 IST" name="t4" finished-at="2025-07-28T13:33:58 IST" duration-ms="7796">
+      <class name="types_of_exe.Demo4">
+        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:54 IST" duration-ms="4449" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logibFbTest -->
-      </class> <!-- extra.FaceBook -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- case1 -->
+        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" started-at="2025-07-28T13:33:54 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case2 -->
+      </class> <!-- types_of_exe.Demo4 -->
+    </test> <!-- t4 -->
+    <test started-at="2025-07-28T13:33:50 IST" name="t3" finished-at="2025-07-28T13:33:58 IST" duration-ms="7949">
+      <class name="types_of_exe.Demo3">
+        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:55 IST" duration-ms="4585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" started-at="2025-07-28T13:33:55 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case2 -->
+      </class> <!-- types_of_exe.Demo3 -->
+    </test> <!-- t3 -->
+    <test started-at="2025-07-28T13:33:50 IST" name="t1" finished-at="2025-07-28T13:33:58 IST" duration-ms="8446">
+      <class name="types_of_exe.Demo1">
+        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo1@76505305]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:55 IST" duration-ms="4677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo1@76505305]" started-at="2025-07-28T13:33:55 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case2 -->
+      </class> <!-- types_of_exe.Demo1 -->
+    </test> <!-- t1 -->
+    <test started-at="2025-07-28T13:33:50 IST" name="t5" finished-at="2025-07-28T13:33:59 IST" duration-ms="8696">
+      <class name="types_of_exe.Demo5">
+        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:55 IST" duration-ms="4789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" started-at="2025-07-28T13:33:55 IST" name="case2" finished-at="2025-07-28T13:33:59 IST" duration-ms="3842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case2 -->
+      </class> <!-- types_of_exe.Demo5 -->
+    </test> <!-- t5 -->
+  </suite> <!-- Suite -->
 </testng-results>

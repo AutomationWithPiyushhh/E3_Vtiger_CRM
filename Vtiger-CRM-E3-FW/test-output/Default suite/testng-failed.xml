@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="comcast.crm.contact.CreateContactTest">
+      <class name="extra.TwoDimension">
         <methods>
-          <include name="createConTest"/>
+          <include name="loginToFB"/>
         </methods>
-      </class> <!-- comcast.crm.contact.CreateContactTest -->
+      </class> <!-- extra.TwoDimension -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

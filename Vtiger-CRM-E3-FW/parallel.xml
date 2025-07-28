@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+
+
+<suite parallel="tests" name="Suite">
+	<test thread-count="5" parallel="tests" name="t1">
+		<classes>
+			<class name="types_of_exe.Demo1" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="5" parallel="tests" name="t2">
+		<classes>
+			<class name="types_of_exe.Demo2" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" parallel="tests" name="t3">
+		<classes>
+			<class name="types_of_exe.Demo3" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" parallel="tests" name="t4">
+		<classes>
+			<class name="types_of_exe.Demo4" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" parallel="tests" name="t5">
+		<classes>
+			<class name="types_of_exe.Demo5" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
