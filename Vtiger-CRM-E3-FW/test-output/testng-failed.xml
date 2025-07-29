@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="extra.TwoDimension">
+      <class name="extra.Demo1">
         <methods>
-          <include name="loginToFB"/>
+          <include name="case1Test"/>
+          <include name="preCon"/>
+          <include name="login"/>
+          <include name="postCon"/>
+          <include name="logOut"/>
+          <include name="repBackup"/>
+          <include name="openBro"/>
+          <include name="closeBro"/>
+          <include name="configRep"/>
         </methods>
-      </class> <!-- extra.TwoDimension -->
+      </class> <!-- extra.Demo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

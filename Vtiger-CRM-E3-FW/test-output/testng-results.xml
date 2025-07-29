@@ -1,84 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-28T13:33:50 IST" name="Suite" finished-at="2025-07-28T13:33:59 IST" duration-ms="8696">
+  <suite started-at="2025-07-29T13:18:15 IST" name="Suite" finished-at="2025-07-29T13:18:33 IST" duration-ms="18100">
     <groups>
-      <group name="reg">
-        <method signature="Demo1.case2()[pri:0, instance:types_of_exe.Demo1@76505305]" name="case2" class="types_of_exe.Demo1"/>
-        <method signature="Demo2.case1()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" name="case1" class="types_of_exe.Demo2"/>
-        <method signature="Demo3.case1()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" name="case1" class="types_of_exe.Demo3"/>
-        <method signature="Demo3.case2()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" name="case2" class="types_of_exe.Demo3"/>
-        <method signature="Demo4.case1()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" name="case1" class="types_of_exe.Demo4"/>
-        <method signature="Demo4.case2()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" name="case2" class="types_of_exe.Demo4"/>
-      </group> <!-- reg -->
-      <group name="smoke">
-        <method signature="Demo1.case1()[pri:0, instance:types_of_exe.Demo1@76505305]" name="case1" class="types_of_exe.Demo1"/>
-        <method signature="Demo2.case2()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" name="case2" class="types_of_exe.Demo2"/>
-        <method signature="Demo3.case2()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" name="case2" class="types_of_exe.Demo3"/>
-        <method signature="Demo5.case1()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" name="case1" class="types_of_exe.Demo5"/>
-        <method signature="Demo5.case2()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" name="case2" class="types_of_exe.Demo5"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-07-28T13:33:50 IST" name="t2" finished-at="2025-07-28T13:33:58 IST" duration-ms="7719">
-      <class name="types_of_exe.Demo2">
-        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:54 IST" duration-ms="4449" status="PASS">
+    <test started-at="2025-07-29T13:18:15 IST" name="Test1" finished-at="2025-07-29T13:18:28 IST" duration-ms="13006">
+      <class name="extra.Demo1">
+        <test-method is-config="true" signature="preCon()[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:15 IST" name="preCon" finished-at="2025-07-29T13:18:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case1 -->
-        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo2@fbd1f6]" started-at="2025-07-28T13:33:54 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3197" status="PASS">
+        </test-method> <!-- preCon -->
+        <test-method is-config="true" signature="openBro(java.lang.String)[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:15 IST" name="openBro" finished-at="2025-07-29T13:18:17 IST" duration-ms="2216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- types_of_exe.Demo2 -->
-    </test> <!-- t2 -->
-    <test started-at="2025-07-28T13:33:50 IST" name="t4" finished-at="2025-07-28T13:33:58 IST" duration-ms="7796">
-      <class name="types_of_exe.Demo4">
-        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:54 IST" duration-ms="4449" status="PASS">
+        </test-method> <!-- openBro -->
+        <test-method is-config="true" signature="login()[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:17 IST" name="login" finished-at="2025-07-29T13:18:19 IST" duration-ms="1428" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case1 -->
-        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo4@2a5c8d3f]" started-at="2025-07-28T13:33:54 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3276" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="case1Test()[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:19 IST" name="case1Test" finished-at="2025-07-29T13:18:19 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- types_of_exe.Demo4 -->
-    </test> <!-- t4 -->
-    <test started-at="2025-07-28T13:33:50 IST" name="t3" finished-at="2025-07-28T13:33:58 IST" duration-ms="7949">
-      <class name="types_of_exe.Demo3">
-        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:55 IST" duration-ms="4585" status="PASS">
+        </test-method> <!-- case1Test -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:19 IST" name="logOut" finished-at="2025-07-29T13:18:25 IST" duration-ms="5846" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case1 -->
-        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo3@7a8c8dcf]" started-at="2025-07-28T13:33:55 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3297" status="PASS">
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBro()[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:25 IST" name="closeBro" finished-at="2025-07-29T13:18:28 IST" duration-ms="3414" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- types_of_exe.Demo3 -->
-    </test> <!-- t3 -->
-    <test started-at="2025-07-28T13:33:50 IST" name="t1" finished-at="2025-07-28T13:33:58 IST" duration-ms="8446">
-      <class name="types_of_exe.Demo1">
-        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo1@76505305]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:55 IST" duration-ms="4677" status="PASS">
+        </test-method> <!-- closeBro -->
+        <test-method is-config="true" signature="postCon()[pri:0, instance:extra.Demo1@179ece50]" started-at="2025-07-29T13:18:28 IST" name="postCon" finished-at="2025-07-29T13:18:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case1 -->
-        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo1@76505305]" started-at="2025-07-28T13:33:55 IST" name="case2" finished-at="2025-07-28T13:33:58 IST" duration-ms="3703" status="PASS">
+        </test-method> <!-- postCon -->
+      </class> <!-- extra.Demo1 -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-07-29T13:18:15 IST" name="Test2" finished-at="2025-07-29T13:18:29 IST" duration-ms="14233">
+      <class name="extra.Demo1">
+        <test-method is-config="true" signature="preCon()[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:15 IST" name="preCon" finished-at="2025-07-29T13:18:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- types_of_exe.Demo1 -->
-    </test> <!-- t1 -->
-    <test started-at="2025-07-28T13:33:50 IST" name="t5" finished-at="2025-07-28T13:33:59 IST" duration-ms="8696">
-      <class name="types_of_exe.Demo5">
-        <test-method signature="case1()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" started-at="2025-07-28T13:33:50 IST" name="case1" finished-at="2025-07-28T13:33:55 IST" duration-ms="4789" status="PASS">
+        </test-method> <!-- preCon -->
+        <test-method is-config="true" signature="openBro(java.lang.String)[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:15 IST" name="openBro" finished-at="2025-07-29T13:18:17 IST" duration-ms="2262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case1 -->
-        <test-method signature="case2()[pri:0, instance:types_of_exe.Demo5@2925bf5b]" started-at="2025-07-28T13:33:55 IST" name="case2" finished-at="2025-07-28T13:33:59 IST" duration-ms="3842" status="PASS">
+        </test-method> <!-- openBro -->
+        <test-method is-config="true" signature="login()[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:17 IST" name="login" finished-at="2025-07-29T13:18:19 IST" duration-ms="1519" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- case2 -->
-      </class> <!-- types_of_exe.Demo5 -->
-    </test> <!-- t5 -->
+        </test-method> <!-- login -->
+        <test-method signature="case1Test()[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:19 IST" name="case1Test" finished-at="2025-07-29T13:18:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1Test -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:19 IST" name="logOut" finished-at="2025-07-29T13:18:26 IST" duration-ms="7016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBro()[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:26 IST" name="closeBro" finished-at="2025-07-29T13:18:29 IST" duration-ms="3363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBro -->
+        <test-method is-config="true" signature="postCon()[pri:0, instance:extra.Demo1@37ceb1df]" started-at="2025-07-29T13:18:29 IST" name="postCon" finished-at="2025-07-29T13:18:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCon -->
+      </class> <!-- extra.Demo1 -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-07-29T13:18:15 IST" name="Test3" finished-at="2025-07-29T13:18:33 IST" duration-ms="18098">
+      <class name="extra.Demo1">
+        <test-method is-config="true" signature="configRep()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:15 IST" name="configRep" finished-at="2025-07-29T13:18:15 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configRep -->
+        <test-method is-config="true" signature="preCon()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:15 IST" name="preCon" finished-at="2025-07-29T13:18:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCon -->
+        <test-method is-config="true" signature="openBro(java.lang.String)[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:15 IST" name="openBro" finished-at="2025-07-29T13:18:21 IST" duration-ms="5857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBro -->
+        <test-method is-config="true" signature="login()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:21 IST" name="login" finished-at="2025-07-29T13:18:26 IST" duration-ms="5202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="case1Test()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:26 IST" name="case1Test" finished-at="2025-07-29T13:18:26 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1Test -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:26 IST" name="logOut" finished-at="2025-07-29T13:18:28 IST" duration-ms="1819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBro()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:28 IST" name="closeBro" finished-at="2025-07-29T13:18:33 IST" duration-ms="5141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBro -->
+        <test-method is-config="true" signature="postCon()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:33 IST" name="postCon" finished-at="2025-07-29T13:18:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCon -->
+        <test-method is-config="true" signature="repBackup()[pri:0, instance:extra.Demo1@20d525]" started-at="2025-07-29T13:18:33 IST" name="repBackup" finished-at="2025-07-29T13:18:33 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- repBackup -->
+      </class> <!-- extra.Demo1 -->
+    </test> <!-- Test3 -->
   </suite> <!-- Suite -->
 </testng-results>

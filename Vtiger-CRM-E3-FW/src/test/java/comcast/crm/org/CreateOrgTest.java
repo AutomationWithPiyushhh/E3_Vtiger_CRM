@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,7 +51,6 @@ public class CreateOrgTest {
 //		WebElement un = driver.findElement(By.name("user_name"));
 		LoginPage lp = new LoginPage(driver);
 		WebElement un = lp.getUsername();
-		driver.navigate().refresh();
 		un.sendKeys(USERNAME);
 
 //		WebElement pwd = driver.findElement(By.name("user_password"));
