@@ -11,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import base_utility.BaseClass;
 import generic_utility.FileUtility;
 import generic_utility.JavaUtility;
 import object_repository.HomePage;
@@ -18,7 +19,7 @@ import object_repository.LoginPage;
 import object_repository.OrgPage;
 import object_repository.VerOrgPage;
 
-public class CreateOrgTest {
+public class CreateOrgTest extends BaseClass {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException, InterruptedException {
 
 		FileUtility fUtil = new FileUtility();

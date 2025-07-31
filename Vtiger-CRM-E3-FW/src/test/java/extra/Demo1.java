@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -25,9 +26,9 @@ public class Demo1 {
 	
 	@Parameters("browser")
 	@BeforeClass
-	public void openBro(String bro) {
+	public void openBro(String value) {
 		
-		String BROWSER = bro;
+		String BROWSER = value;
 		
 		System.out.println("Open the browser");
 		if (BROWSER.equals("chrome")) {
@@ -74,13 +75,13 @@ public class Demo1 {
 ////		click on signout link
 //		hp.getSignOut().click();
 //	}
-//	
-//	@AfterClass
-//	public void closeBro() throws InterruptedException {
-//		System.out.println("close the browser");
-//		Thread.sleep(3000);
-//		driver.quit();
-//	}
+	
+	@AfterClass
+	public void closeBro() throws InterruptedException {
+		System.out.println("close the browser");
+		Thread.sleep(3000);
+		driver.quit();
+	}
 //	
 //	@AfterTest
 //	public void postCon() {
