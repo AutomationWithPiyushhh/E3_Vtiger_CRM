@@ -2,7 +2,6 @@ package object_repository;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,11 +12,6 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
-//	AutoHealing
-//	@FindAll({ 
-//				@FindBy(locator1 = "value1"), 
-//				@FindBy(locator2 = "value2")
-//			})
 	@FindBy(linkText ="Organizations")
 	private WebElement orgLink;
 

@@ -1,59 +1,17 @@
 package comcast.crm.contact;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import generic_utility.FileUtility;
-import generic_utility.WebdriverUtility;
+import base_utility.BaseClass;
 
-public class CreateContactTest {
+public class CreateContactTest extends BaseClass {
 
 	@Test
 	public void createConTest() throws IOException {
-
-		FileUtility fUtil = new FileUtility();
-		String BROWSER = fUtil.getDataFromPropertiesFile("bro");
-		String URL = fUtil.getDataFromPropertiesFile("url");
-		String USERNAME = fUtil.getDataFromPropertiesFile("un");
-		String PASSWORD = fUtil.getDataFromPropertiesFile("pwd");
-
-		WebDriver driver = null;
-
-		if (BROWSER.equals("chrome")) {
-			driver = new ChromeDriver();
-		} else if (BROWSER.equals("edge")) {
-			driver = new EdgeDriver();
-		} else if (BROWSER.equals("firefox")) {
-			driver = new FirefoxDriver();
-		} else {
-			driver = new ChromeDriver();
-		}
-
-//		driver.manage().window().maximize();
-
-		WebdriverUtility wdUtil = new WebdriverUtility(driver);
-		wdUtil.maxWin();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
-		driver.get(URL);
-
-//		Logging into Vtiger crm application
-		WebElement username = driver.findElement(By.name("user_name"));
-		username.sendKeys(USERNAME);
-
-		WebElement password = driver.findElement(By.name("user_password"));
-		password.sendKeys(PASSWORD);
-
-		driver.findElement(By.id("submitButton")).click();
 
 //		Click on contact link
 		driver.findElement(By.linkText("Contacts")).click();
@@ -76,16 +34,5 @@ public class CreateContactTest {
 			System.out.println("Contact created successfully....");
 		}
 
-//		Logging out 
-		WebElement profile = driver.findElement(By.cssSelector("img[src='themes/softed/images/user.PNG']"));
-
-//		Actions act = new Actions(driver);
-//		act.moveToElement(profile).build().perform();
-
-		wdUtil.hover(profile);
-
-		driver.findElement(By.linkText("Sign Out")).click();
-
-		driver.quit();
 	}
 }
