@@ -2,48 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-01T13:37:06 IST" name="Default suite" finished-at="2025-08-01T13:37:18 IST" duration-ms="12232">
+  <suite started-at="2025-08-04T13:25:12 IST" name="Default suite" finished-at="2025-08-04T13:25:12 IST" duration-ms="86">
     <groups>
     </groups>
-    <test started-at="2025-08-01T13:37:06 IST" name="Default test" finished-at="2025-08-01T13:37:18 IST" duration-ms="12232">
-      <class name="comcast.crm.org.CreateOrgTest">
-        <test-method is-config="true" signature="repConfig()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:06 IST" name="repConfig" finished-at="2025-08-01T13:37:06 IST" duration-ms="10" status="PASS">
+    <test started-at="2025-08-04T13:25:12 IST" name="Default test" finished-at="2025-08-04T13:25:12 IST" duration-ms="86">
+      <class name="working_with_assertion.WorkingWithSoftAssert">
+        <test-method signature="case1()[pri:0, instance:working_with_assertion.WorkingWithSoftAssert@1aafa419]" started-at="2025-08-04T13:25:12 IST" name="case1" finished-at="2025-08-04T13:25:12 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- repConfig -->
-        <test-method is-config="true" signature="preCon()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:06 IST" name="preCon" finished-at="2025-08-01T13:37:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preCon -->
-        <test-method is-config="true" signature="openBro()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:06 IST" name="openBro" finished-at="2025-08-01T13:37:08 IST" duration-ms="2436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBro -->
-        <test-method is-config="true" signature="login()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:08 IST" name="login" finished-at="2025-08-01T13:37:11 IST" duration-ms="2954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgTest()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:11 IST" name="createOrgTest" finished-at="2025-08-01T13:37:17 IST" duration-ms="5546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:17 IST" name="logout" finished-at="2025-08-01T13:37:18 IST" duration-ms="921" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBro()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:18 IST" name="closeBro" finished-at="2025-08-01T13:37:18 IST" duration-ms="292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBro -->
-        <test-method is-config="true" signature="postCon()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:18 IST" name="postCon" finished-at="2025-08-01T13:37:18 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCon -->
-        <test-method is-config="true" signature="repBackup()[pri:0, instance:comcast.crm.org.CreateOrgTest@9d5509a]" started-at="2025-08-01T13:37:18 IST" name="repBackup" finished-at="2025-08-01T13:37:18 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- repBackup -->
-      </class> <!-- comcast.crm.org.CreateOrgTest -->
+        </test-method> <!-- case1 -->
+      </class> <!-- working_with_assertion.WorkingWithSoftAssert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

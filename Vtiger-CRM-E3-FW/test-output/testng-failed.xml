@@ -3,19 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="comcast.crm.contact.CreateContactTest">
+      <class name="working_with_assertion.WorkingWithSoftAssert">
         <methods>
-          <include name="logout"/>
-          <include name="openBro"/>
-          <include name="preCon"/>
-          <include name="createConTest"/>
-          <include name="closeBro"/>
-          <include name="postCon"/>
-          <include name="login"/>
-          <include name="repBackup"/>
-          <include name="repConfig"/>
+          <include name="case1"/>
         </methods>
-      </class> <!-- comcast.crm.contact.CreateContactTest -->
+      </class> <!-- working_with_assertion.WorkingWithSoftAssert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
