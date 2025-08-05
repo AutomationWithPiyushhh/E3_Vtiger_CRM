@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="working_with_assertion.WorkingWithSoftAssert">
+      <class name="working_with_listeners.DemoTest">
         <methods>
-          <include name="case1"/>
+          <include name="logout"/>
+          <include name="openBro"/>
+          <include name="preCon"/>
+          <include name="closeBro"/>
+          <include name="postCon"/>
+          <include name="login"/>
+          <include name="vtiger2"/>
+          <include name="repBackup"/>
+          <include name="repConfig"/>
         </methods>
-      </class> <!-- working_with_assertion.WorkingWithSoftAssert -->
+      </class> <!-- working_with_listeners.DemoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

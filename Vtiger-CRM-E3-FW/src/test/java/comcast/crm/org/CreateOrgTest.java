@@ -3,6 +3,8 @@ package comcast.crm.org;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base_utility.BaseClass;
@@ -12,7 +14,9 @@ import object_repository.HomePage;
 import object_repository.OrgPage;
 import object_repository.VerOrgPage;
 
-public class CreateOrgTest extends BaseClass{
+
+//@Listeners(listeners_utility.List_imp.class)
+public class CreateOrgTest extends BaseClass {
 
 	@Test
 	public void createOrgTest() throws EncryptedDocumentException, IOException, InterruptedException {
@@ -36,8 +40,13 @@ public class CreateOrgTest extends BaseClass{
 //		Verification
 		VerOrgPage vop = new VerOrgPage(driver);
 		String actOrgName = vop.getActOrgName().getText();
-		if (actOrgName.equals(orgName)) {
-			System.out.println("Organization created successfully....");
-		}
+
+		Assert.assertEquals(actOrgName, orgName);
+		
+//		if (actOrgName.equals(orgName)) {
+//			System.out.println("Organization created successfully....");
+//		} else {
+//			System.out.println("Org didn't create...");
+//		}
 	}
 }

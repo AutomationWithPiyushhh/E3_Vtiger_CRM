@@ -25,11 +25,12 @@ import object_repository.LoginPage;
 public class BaseClass {
 
 	public WebDriver driver;
+	public static WebDriver sdriver ;
 	FileUtility fUtil = new FileUtility();
 
 	@BeforeSuite
 	public void repConfig() {
-		System.out.println("DB conn + Rep config.");
+//		System.out.println("DB conn + Rep config.");
 	}
 
 	@BeforeTest
@@ -52,6 +53,8 @@ public class BaseClass {
 		} else {
 			driver = new ChromeDriver();
 		}
+
+		sdriver = driver;
 
 //		driver.manage().window().maximize();
 
@@ -105,7 +108,7 @@ public class BaseClass {
 
 	@AfterSuite
 	public void repBackup() {
-		System.out.println("DB conn close + Rep Backup");
+//		System.out.println("DB conn close + Rep Backup");
 	}
 
 }

@@ -4,10 +4,13 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base_utility.BaseClass;
 
+//@Listeners(listeners_utility.List_imp.class)
 public class CreateContactTest extends BaseClass {
 
 	@Test
@@ -30,9 +33,11 @@ public class CreateContactTest extends BaseClass {
 //		Verification
 		String actLastName = driver.findElement(By.id("dtlview_Last Name")).getText();
 
-		if (actLastName.equals(lastName)) {
-			System.out.println("Contact created successfully....");
-		}
+		Assert.assertEquals(actLastName, lastName);
+		
+//		if (actLastName.equals(lastName)) {
+//			System.out.println("Contact created successfully....");
+//		}
 
 	}
 }
