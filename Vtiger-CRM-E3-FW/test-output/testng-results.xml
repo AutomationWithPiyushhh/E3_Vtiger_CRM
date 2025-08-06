@@ -2,70 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-05T13:52:49 IST" name="Suite" finished-at="2025-08-05T13:53:12 IST" duration-ms="23261">
+  <suite started-at="2025-08-06T13:36:02 IST" name="Default suite" finished-at="2025-08-06T13:36:03 IST" duration-ms="686">
     <groups>
     </groups>
-    <test started-at="2025-08-05T13:52:49 IST" name="Test" finished-at="2025-08-05T13:53:12 IST" duration-ms="23261">
-      <class name="comcast.crm.org.CreateOrgTest">
-        <test-method is-config="true" signature="repConfig()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:52:49 IST" name="repConfig" finished-at="2025-08-05T13:52:49 IST" duration-ms="13" status="PASS">
+    <test started-at="2025-08-06T13:36:02 IST" name="Default test" finished-at="2025-08-06T13:36:03 IST" duration-ms="686">
+      <class name="advance_reports.Facebook">
+        <test-method signature="adRep()[pri:0, instance:advance_reports.Facebook@7b98f307]" started-at="2025-08-06T13:36:02 IST" name="adRep" finished-at="2025-08-06T13:36:03 IST" duration-ms="555" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- repConfig -->
-        <test-method is-config="true" signature="preCon()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:52:49 IST" name="preCon" finished-at="2025-08-05T13:52:49 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- adRep -->
+        <test-method signature="repAd()[pri:0, instance:advance_reports.Facebook@7b98f307]" started-at="2025-08-06T13:36:03 IST" name="repAd" finished-at="2025-08-06T13:36:03 IST" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCon -->
-        <test-method is-config="true" signature="openBro()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:52:49 IST" name="openBro" finished-at="2025-08-05T13:52:51 IST" duration-ms="2388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBro -->
-        <test-method is-config="true" signature="login()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:52:51 IST" name="login" finished-at="2025-08-05T13:52:52 IST" duration-ms="271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrgTest()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:52:52 IST" name="createOrgTest" finished-at="2025-08-05T13:53:00 IST" duration-ms="8320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrgTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:53:00 IST" name="logout" finished-at="2025-08-05T13:53:01 IST" duration-ms="963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBro()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:53:01 IST" name="closeBro" finished-at="2025-08-05T13:53:01 IST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBro -->
-        <test-method is-config="true" signature="postCon()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:53:12 IST" name="postCon" finished-at="2025-08-05T13:53:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCon -->
-        <test-method is-config="true" signature="repBackup()[pri:0, instance:comcast.crm.org.CreateOrgTest@3cd3e762]" started-at="2025-08-05T13:53:12 IST" name="repBackup" finished-at="2025-08-05T13:53:12 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- repBackup -->
-      </class> <!-- comcast.crm.org.CreateOrgTest -->
-      <class name="comcast.crm.contact.CreateContactTest">
-        <test-method is-config="true" signature="openBro()[pri:0, instance:comcast.crm.contact.CreateContactTest@6ed3ccb2]" started-at="2025-08-05T13:53:01 IST" name="openBro" finished-at="2025-08-05T13:53:03 IST" duration-ms="1746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBro -->
-        <test-method is-config="true" signature="login()[pri:0, instance:comcast.crm.contact.CreateContactTest@6ed3ccb2]" started-at="2025-08-05T13:53:03 IST" name="login" finished-at="2025-08-05T13:53:06 IST" duration-ms="2912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createConTest()[pri:0, instance:comcast.crm.contact.CreateContactTest@6ed3ccb2]" started-at="2025-08-05T13:53:06 IST" name="createConTest" finished-at="2025-08-05T13:53:11 IST" duration-ms="5145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createConTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:comcast.crm.contact.CreateContactTest@6ed3ccb2]" started-at="2025-08-05T13:53:11 IST" name="logout" finished-at="2025-08-05T13:53:12 IST" duration-ms="942" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBro()[pri:0, instance:comcast.crm.contact.CreateContactTest@6ed3ccb2]" started-at="2025-08-05T13:53:12 IST" name="closeBro" finished-at="2025-08-05T13:53:12 IST" duration-ms="286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBro -->
-      </class> <!-- comcast.crm.contact.CreateContactTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- repAd -->
+      </class> <!-- advance_reports.Facebook -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
